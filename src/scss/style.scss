@@ -6,20 +6,106 @@
 
 
 body {
-	font-size: 20px;
-	font-weight: 400;
-	line-height: 1.2;
-	font-family: 'Rubik', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.6;
+	font-family: $nunitoSans;
 	color: $black;
 	background-color: $white;
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1212px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 36px;
 }
 
+/* HEADER */
+.header {
+	&__top {
+		padding: 10px 0;
+		&-inner {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&-right {
+			display: flex;
+		}
+	}
+	&__bottom {
+		padding: 33px 0;
+		border-top: 1px solid #F0F0F0;
+		border-bottom: 1px solid #F0F0F0;
+		&-inner {
+			display: flex;
+			align-items: center;
+		}
+	}
+	&__email {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 1.333;
+		color: $grey;
+	}
+	&__numbers, &__socials {
+		display: flex;
+	}
+	&__numbers {
+		margin-right: 34px;
+	}
+	&__number {
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 1.333;
+		color: $grey;
+		text-transform: uppercase;
+		margin-right: 24px;
+		&:last-child {
+			margin-right: 0;
+		}
+		span {
+			margin-right: 2px;
+		}
+		a {
+			color: $grey;
+		}
+	}
+	&__social {
+		width: 20px;
+		height: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $grey_1;
+		border-radius: 100%;
+		margin-right: 12px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__logo {
+		margin-right: 74px;
+	}
+	&__nav {
+		&-list {
+			display: flex;
+		}
+		&-item {
+			margin-right: 40px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		&-link {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 1.357;
+			color: $black_1
+		}
+	}
+}
+/* HEADER */
 
 
 @import "media.scss";

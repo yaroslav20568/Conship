@@ -1,35 +1,50 @@
 @font-face{
-	font-family: Rubik;
+	font-family: NunitoSans;
 	font-display: swap;
-	src: url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff");
+	src: url("../fonts/NunitoSans-SemiBold.woff2") format("woff2"), url("../fonts/NunitoSans-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face{
+	font-family: NunitoSans;
+	font-display: swap;
+	src: url("../fonts/NunitoSans-Regular.woff2") format("woff2"), url("../fonts/NunitoSans-Regular.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face{
-	font-family: Rubik;
+	font-family: NunitoSans;
 	font-display: swap;
-	src: url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff");
-	font-weight: 500;
+	src: url("../fonts/NunitoSans-Bold.woff2") format("woff2"), url("../fonts/NunitoSans-Bold.woff") format("woff");
+	font-weight: 700;
 	font-style: normal;
 }
 @font-face{
-	font-family: Rubik;
+	font-family: NunitoSans;
 	font-display: swap;
-	src: url("../fonts/Rubik-SemiBold.woff2") format("woff2"), url("../fonts/Rubik-SemiBold.woff") format("woff");
+	src: url("../fonts/NunitoSans-ExtraBold.woff2") format("woff2"), url("../fonts/NunitoSans-ExtraBold.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: Montserrat;
+	font-display: swap;
+	src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
 	font-weight: 600;
+	font-style: normal;
+}
+@font-face{
+	font-family: Montserrat;
+	font-display: swap;
+	src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+	font-weight: 500;
 	font-style: normal;
 }
 @font-face{
 	font-family: Inter;
 	font-display: swap;
 	src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-}
-@font-face{
-	font-family: Roboto;
-	font-display: swap;
-	src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
