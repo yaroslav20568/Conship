@@ -21,7 +21,24 @@
 }
 
 @media(max-width: 992px) {
-
+	.intro {
+		&__slide {
+			&-content {
+				&-inner {
+					padding-left: 60px;
+				}
+			}
+			&-wave {
+				margin-bottom: 24px;
+			}
+			&-title {
+				font-size: 45px;
+			}
+			&-subtitle {
+				font-size: 20px;
+			}
+		}
+	}
 }
 
 @media(max-width: 930px) {
@@ -31,6 +48,15 @@
 		}
 		&__burger {
 			display: block;
+		}
+	}
+	.intro {
+		padding-top: 0;
+		&__container {
+			padding: 0;
+		}
+		&__swiper {
+			border-radius: 0;
 		}
 	}
 }
@@ -95,6 +121,31 @@
 			}
 		}
 	}
+	.intro {
+		&__slide {
+			&-content {
+				width: 100%;
+				&-inner {
+					padding: 0 36px;
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 650px) {
+	.intro {
+		&__slide {
+			&-content {
+				bottom: 50%;
+				transform: translateY(50%);
+			}
+			&-img {
+				min-height: 600px;
+				object-fit: cover;
+			}
+		}
+	}
 }
 
 @media(max-width: 576px) {
@@ -102,43 +153,43 @@
 }
 
 @media(max-width: 480px) {
-    .header {
-			&__bottom {
-				// padding: 13px 0;
-				&-inner {
-					padding: 13px 0;
-				}
+	.header {
+		&__bottom {
+			// padding: 13px 0;
+			&-inner {
+				padding: 13px 0;
 			}
 		}
+	}
 }
 
 @media(max-width: 360px) {
-    .header {
-			&__top {
-				padding: 37px 0 7px;
-			}
-			&__socials {
-				display: none;
-			}
-			// &__mobile {
-			// 	&-socials {
-			// 		display: block !important;
-			// 	}
-			// }
-			.header__bottom-group {
-				&.active {
-					.header {
-						&__mobile {
-							&-socials {
-								// display: block !important;
-								display: flex !important;
-								margin-bottom: 23px !important;
-							}
+	.header {
+		&__top {
+			padding: 37px 0 7px;
+		}
+		&__socials {
+			display: none;
+		}
+		// &__mobile {
+		// 	&-socials {
+		// 		display: block !important;
+		// 	}
+		// }
+		.header__bottom-group {
+			&.active {
+				.header {
+					&__mobile {
+						&-socials {
+							// display: block !important;
+							display: flex !important;
+							margin-bottom: 23px !important;
 						}
 					}
 				}
 			}
 		}
+	}
 }
 
 @media(max-width: 360px) {
@@ -154,6 +205,37 @@
 						}
 					}
 				}
+			}
+		}
+	}
+	.intro {
+		&__swiper {
+			&-pagination {
+				bottom: 12px !important;
+				.swiper-pagination-bullet {
+					width: 8px;
+					height: 8px;
+					margin: 0 16px 0 0 !important;
+				}
+			}
+		}
+		&__slide {
+			&-content {
+				bottom: 56px;
+				transform: none;
+				overflow: hidden;
+			}
+			&-wave {
+				transform: translateX(-75px);
+			}
+			&-title {
+				font-size: 40px;
+				line-height: 130%;
+				margin-bottom: 8px;
+			}
+			&-subtitle {
+				font-size: 18px;
+				line-height: 130%;
 			}
 		}
 	}

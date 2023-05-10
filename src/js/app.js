@@ -13,4 +13,14 @@ document.addEventListener('DOMContentLoaded', () => {
 			headerBottomGroup.classList.remove('active');
 		}
 	});
+
+	const introSwiper = new Swiper('.intro__swiper', {
+		speed: 400,
+		spaceBetween: 100,
+		slidesPerView: 1,
+		pagination: {
+				el: '.intro__swiper-pagination',
+				clickable: true
+		},
+	});
 });
