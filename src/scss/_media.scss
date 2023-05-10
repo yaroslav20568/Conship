@@ -2,12 +2,99 @@
 
 }
 
+@media(max-width: 1050px) {
+	.header {
+		&__logo {
+			margin-right: 0;
+		}
+		&__bottom {
+			&-inner {
+				justify-content: space-between;
+			}
+		}
+		&__nav {
+			&-item {
+				margin-right: 25px;
+			}
+		}
+	}
+}
+
 @media(max-width: 992px) {
 
 }
 
-@media(max-width: 768px) {
+@media(max-width: 930px) {
+	.header {
+		&__nav {
+			display: none;
+		}
+		&__burger {
+			display: block;
+		}
+	}
+}
 
+@media(max-width: 850px) {
+	.header {
+		&__socials {
+			display: none;
+		}
+		&__numbers {
+			margin-right: 0;
+		}
+		// &__mobile {
+		// 	&-numbers {
+		// 		display: none !important;
+		// 	}
+		// }
+	}
+	.header__bottom-group {
+		&.active {
+			.header {
+				&__mobile {
+					&-socials {
+						// display: block !important;
+						display: flex !important;
+						margin-bottom: 0 !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 768px) {
+	.header {
+		&__numbers {
+			display: none;
+		}
+		&__socials {
+			display: flex;
+		}
+		// &__mobile {
+		// 	&-socials {
+		// 		display: none !important;
+		// 	}
+		// 	&-numbers {
+		// 		display: block !important;
+		// 	}
+		// }
+		.header__bottom-group {
+			&.active {
+				.header {
+					&__mobile {
+						&-socials {
+							display: none !important;
+						}
+						&-numbers {
+							display: block !important;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @media(max-width: 576px) {
@@ -15,5 +102,59 @@
 }
 
 @media(max-width: 480px) {
-    
+    .header {
+			&__bottom {
+				// padding: 13px 0;
+				&-inner {
+					padding: 13px 0;
+				}
+			}
+		}
+}
+
+@media(max-width: 360px) {
+    .header {
+			&__top {
+				padding: 37px 0 7px;
+			}
+			&__socials {
+				display: none;
+			}
+			// &__mobile {
+			// 	&-socials {
+			// 		display: block !important;
+			// 	}
+			// }
+			.header__bottom-group {
+				&.active {
+					.header {
+						&__mobile {
+							&-socials {
+								// display: block !important;
+								display: flex !important;
+								margin-bottom: 23px !important;
+							}
+						}
+					}
+				}
+			}
+		}
+}
+
+@media(max-width: 360px) {
+	.header  {
+		.header__bottom-group {
+			&.active {
+				.header {
+					&__mobile {
+						&-socials {
+							&-item {
+								margin-right: 15px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
