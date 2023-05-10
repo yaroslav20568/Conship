@@ -38,11 +38,12 @@ body {
 		// padding: 33px 0;
 		border-top: 1px solid $grey_2;
 		border-bottom: 1px solid $grey_2;
+		position: relative;
 		&-inner {
 			display: flex;
 			align-items: center;
 			padding: 33px 0;
-			position: relative;
+			// position: relative;
 		}
 	}
 	&__email {
@@ -97,7 +98,8 @@ body {
 			left: 0;
 			z-index: 10;
 			width: 100%;
-			padding: 48px 0 40px;
+			padding: 48px 36px 40px;
+			background-color: $white;
 			.header {
 				&__nav {
 					display: block;
