@@ -348,6 +348,21 @@ body {
 		}
 	}
 }
+.link-green-stroke {
+	display: inline-block;
+	padding: 10px 38px;
+	border-radius: 30px;
+	border: 2px solid #24D385;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 160%;
+	color: $white;
+	text-transform: uppercase;
+	transition: .4s linear background-color;
+	&:hover {
+		background-color: $cyan;
+	}
+}
 /* BTNS */
 
 /* TITLE */
@@ -402,5 +417,92 @@ body {
 	}
 }
 /*ABOUT-COMPANY-SECTION*/
+
+/*SERVICES-TYPE-SECTION*/
+.services-type-section {
+	&__container {
+		max-width: 1282px;
+		padding: 0 36px;
+		margin: 0 auto;
+	}
+	&__title {
+		text-align: center;
+		max-width: 512px;
+		margin: 0 auto 30px;
+		padding-bottom: 24px;
+		&::after {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px;
+	}
+	&__item {
+		width: 33.33333%;
+		padding: 0 10px;
+		border-radius: 10px;
+		overflow: hidden;
+		&-inner {
+			position: relative;
+			border-radius: 10px;
+			overflow: hidden;
+			cursor: pointer;
+			&:hover {
+				.link-green-stroke {
+					background-color: $cyan;
+				}
+				.services-type-section__item-background {
+					opacity: 1;
+				}
+			}
+		}
+		&-img {
+			width: 100%;
+		}
+		&-background {
+			opacity: 0;
+			background: rgba(0,0,0,.5);
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: .4s linear opacity;
+		}
+		&-type {
+			position: absolute;
+			top: 24px;
+			left: 34px;
+
+			font-weight: 800;
+			font-size: 52px;
+			line-height: 120%;
+			text-transform: uppercase;
+			color: rgba(255, 255, 255, 0.3);
+		}
+		&-bottom {
+			position: absolute;
+			bottom: 0;
+			text-align: center;
+			padding: 0 47px 38px;
+		}
+		&-title {
+			font-weight: 800;
+			font-size: 24px;
+			line-height: 130%;
+			color: $white;
+			margin-bottom: 24px;
+		}
+		&-text {
+			line-height: 140%;
+			color: $white;
+			margin-bottom: 32px;
+		}
+	}
+}
+/*SERVICES-TYPE-SECTION*/
 
 @import "media.scss";
