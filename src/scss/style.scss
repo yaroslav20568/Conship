@@ -389,8 +389,9 @@ body {
 }
 /* TITLE */
 
-/*ABOUT-COMPANY-SECTION*/
-.about-company-section {
+/*MAIN_SECTION*/
+.main-section {
+	overflow-x: hidden;
 	&__inner {
 		display: flex;
 	}
@@ -404,7 +405,8 @@ body {
 		margin-bottom: 48px;
 	}
 	&__text {
-		max-width: 340px;
+		// max-width: 340px;
+		width: 340px;
 		&:first-child {
 			margin-bottom: 24px;
 		}
@@ -413,11 +415,17 @@ body {
 		}
 	}
 	&__img {
-		transform: translateX(68px);
+		// transform: translateX(68px);
 		border-radius: 10px 0px 0px 10px;
 	}
 }
-/*ABOUT-COMPANY-SECTION*/
+/*MAIN_SECTION*/
+
+.about-company-section {
+	&__img {
+		transform: translateX(-2px);
+	}
+}
 
 /*SERVICES-TYPE-SECTION*/
 .services-type-section {
@@ -549,5 +557,36 @@ body {
 	}
 }
 /*DISTRIBUTION-SECTION*/
+
+/*CONTAINERS-BUYING-SECTION*/
+.containers-buying-section {
+	&__left {
+		margin-top: 71px;
+	}
+	&__title {
+		max-width: 262px;
+		padding-bottom: 29px;
+		margin-left: 97px;
+		&::after {
+			// width: 363px;
+			width: 388px;
+			height: 34px;
+			// margin-left: -169px;
+			margin-left: -185px;
+			background-image: url('@img/containers-buying/arrow-right-blue.svg');
+		}
+	}
+	&__text {
+		// max-width: 348px;
+		width: 348px;
+	}
+}
+/*CONTAINERS-BUYING-SECTION*/
+
+.containers-buying-section {
+	&__img {
+		transform: translateX(-35px);
+	}
+}
 
 @import "media.scss";

@@ -2,15 +2,15 @@
 
 
 @media(max-width: 1280px) {
-	.about-company-section {
+	.main-section {
 		&__img {
-			transform: none;
+			// transform: none;
 		}
 	}
 }
 
 @media(max-width: 1200px) {
-	.about-company-section {
+	.main-section {
 		&__left {
 			width: 40%;
 			margin-right: 28px;
@@ -25,7 +25,8 @@
 			margin-bottom: 24px;
 		}
 		&__text {
-			max-width: none;
+			// max-width: none;
+			width: auto;
 			&:first-child {
 				margin-bottom: 16px;
 			}
@@ -88,7 +89,7 @@
 			}
 		}
 	}
-	.about-company-section {
+	.main-section {
 		&__inner {
 			align-items: center;
 		}
@@ -150,7 +151,7 @@
 			padding-bottom: 14px;
 		}
 	}
-	.about-company-section {
+	.main-section {
 		.container {
 			padding: 0;
 		}
@@ -418,7 +419,7 @@
 			}
 		}
 	}
-	.about-company-section {
+	.main-section {
 		&__img {
 			min-height: 240px;
 			object-fit: cover;
