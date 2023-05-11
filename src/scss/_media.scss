@@ -145,6 +145,7 @@
 	}
 	.our-network-section {
 		transform: translateY(-130px);
+		margin-bottom: -130px;
 		&__map {
 			&-info {
 				max-width: none;
@@ -280,6 +281,7 @@
 	}
 	.our-network-section {
 		transform: none;
+		margin-bottom: 0;
 		&__network {
 			width: 100%;
 			svg {

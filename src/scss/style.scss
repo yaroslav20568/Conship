@@ -645,6 +645,7 @@ body {
 /*OUR-NETWORK-SECTION*/
 .our-network-section {
 	transform: translateY(-189px);
+	margin-bottom: -189px;
 	&__container {
 		max-width: 1280px;
 		margin: 0 auto;
@@ -738,5 +739,31 @@ body {
 	}
 }
 /*OUR-NETWORK-SECTION*/
+
+/*FOOTER*/
+.footer {
+	&__inner {
+		background-color: $black_1;
+		border-radius: 10px;
+	}
+	&__top {
+		padding: 30px 40px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__bottom {
+		padding: 10px 40px;
+	}
+	&__copyright {
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 1.25;
+		color: #505050;
+	}
+}
+/*FOOTER*/
 
 @import "media.scss";
