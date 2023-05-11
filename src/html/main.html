@@ -74,7 +74,7 @@
 	</section>
 	<section class="containers-buying-section main-section">
 		<div class="container">
-			<div class="containers-buying-section_inner main-section__inner">
+			<div class="containers-buying-section__inner main-section__inner">
 				<div class="containers-buying-section__left main-section__left">
 					<h2 class="containers-buying-section__title main-section__title section__title">Containers buying, selling and rent</h2>
 					<div class="containers-buying-section__texts main-section__texts">
@@ -84,7 +84,11 @@
 					<a href="#" class="containers-buying-section__link main-section__link link-green-arrow">Read more</a>
 				</div>
 				<div class="containers-buying-section__right">
-					<img src="@img/containers-buying/container-background.jpg" alt="about-img" class="containers-buying-section__img main-section__img">
+					<picture>
+						<source srcset="@img/containers-buying/small-container.png" media="(max-width: 850px)">
+						<source srcset="@img/containers-buying/container-background.jpg">
+						<img src="@img/containers-buying/container-background.jpg" alt="about-img" class="containers-buying-section__img main-section__img">
+					</picture>
 				</div>
 			</div>
 		</div>

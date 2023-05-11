@@ -75,6 +75,11 @@
 			}
 		}
 	}
+	.containers-buying-section {
+		&__left {
+			margin-top: 30px;
+		}
+	}
 }
 
 @media(max-width: 992px) {
@@ -101,8 +106,13 @@
 			align-items: center;
 		}
 	}
-
+	.containers-buying-section {
+		&__inner {
+			align-items: start;
+		}
+	}
 	.support-trade-section {
+		transform: translateY(-130px);
 		&__inner {
 			align-items: center;
 		}
@@ -131,6 +141,12 @@
 		}
 		&__swiper {
 			border-radius: 0;
+		}
+	}
+	.containers-buying-section {
+		&__left {
+			width: 68%;
+			margin-top: 0;
 		}
 	}
 }
@@ -203,6 +219,27 @@
 			}
 		}
 	}
+	.containers-buying-section {
+		margin-bottom: -150px;
+		&__left {
+			transform: translateY(-220px);
+		}
+		&__img {
+			transform: none;
+		}
+	}
+	.support-trade-section {
+		transform: none;
+	}
+}
+
+@media(max-width: 700px) {
+	.containers-buying-section {
+		margin-bottom: -120px;
+		&__left {
+			transform: translateY(-190px);
+		}
+	}
 }
 
 @media(max-width: 768px) {
@@ -262,6 +299,9 @@
 	.distribution-section {
 		margin-top: 16px;
 	}
+	.containers-buying-section {
+		padding-top: 80px;
+	}
 	.support-trade-section {
 		&__inner {
 			flex-direction: column;
@@ -311,6 +351,12 @@
 			margin-bottom: 110px;
 		}
 	}
+	.containers-buying-section {
+		margin-bottom: -110px;
+		&__left {
+			transform: translateY(-160px);
+		}
+	}
 }
 
 @media(max-width: 520px) {
@@ -336,6 +382,19 @@
 			&-img {
 				max-height: 430px;
 				object-fit: cover;
+			}
+		}
+	}
+	.containers-buying-section {
+		margin-bottom: -90px;
+		&__left {
+			transform: translateY(-140px);
+		}
+		&__title {
+			margin-left: 0;
+			padding-bottom: 40px;
+			&::after {
+				margin-left: -95px;
 			}
 		}
 	}
@@ -388,6 +447,7 @@
 		}
 	}
 	.distribution-section {
+		min-height: auto;
 		&__inner {
 			padding: 16px 16px 24px;
 		}
@@ -402,6 +462,31 @@
 			font-size: 14px;
 			color: rgba(255, 255, 255, 0.8);
 			margin-bottom: 24px;
+		}
+	}
+	.containers-buying-section {
+		margin-bottom: -30px;
+		&__left {
+			transform: translateY(-120px);
+		}
+		&__title {
+			max-width: 208px;
+			&::after {
+				width: 323px;
+				background-image: url('../img/containers-buying/arrow-right-blue-small.svg');
+			}
+		}
+		&__text {
+			font-size: 14px;
+		}
+	}
+}
+
+@media(max-width: 380px) {
+	.containers-buying-section {
+		margin-bottom: 0px;
+		&__left {
+			transform: translateY(-90px);
 		}
 	}
 }
@@ -478,6 +563,12 @@
 			&-img {
 				max-height: 362px;
 			}
+		}
+	}
+	.containers-buying-section {
+		margin-bottom: -10px;
+		&__left {
+			transform: translateY(-80px);
 		}
 	}
 }
