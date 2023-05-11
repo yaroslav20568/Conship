@@ -584,9 +584,62 @@ body {
 /*CONTAINERS-BUYING-SECTION*/
 
 .containers-buying-section {
+	padding-top: 100px;
 	&__img {
 		transform: translateX(-35px);
 	}
 }
+
+/*SUPPORT-TRADE*/
+.support-trade-section {
+	transform: translateY(-189px);
+	background-color: $black_1;
+	&__container {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+	&__inner {
+		display: flex;
+	}
+	&__left {
+		width: 50.8%;
+		padding: 87px 113px 90px 68px
+	}
+	&__right {
+		width: 49.2%;
+	}
+	&__title {
+		color: $white;
+		margin-bottom: 40px;
+	}
+	&__texts {
+		margin-bottom: 40px;
+	}
+	&__text {
+		width: auto;
+		&:first-child {
+			margin-bottom: 32px;
+			color: $white;
+		}
+		&:last-child {
+			margin-left: 0;
+			font-size: 14px;
+			color: $grey_3;
+			padding-left: 13px;
+			position: relative;
+			&::before {
+				content: "*";
+				position: absolute;
+				left: 0;
+			}
+		}
+	}
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+/*SUPPORT-TRADE*/
 
 @import "media.scss";
