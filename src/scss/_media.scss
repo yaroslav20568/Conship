@@ -45,6 +45,29 @@
 			}
 		}
 	}
+	.our-network-section {
+		&__map {
+			svg {
+				margin-bottom: -9px;
+			}
+			&-info {
+				max-width: 390px;
+				top: 30px;
+			}
+			&-texts {
+				padding: 16px 36px 17px 36px;
+			}
+			&-country {
+				padding: 6px 36px;
+			}
+			&-wrapper-link {
+				position: static;
+				transform: none;
+				text-align: center;
+				margin-top: 20px;
+			}
+		}
+	}
 }
 
 @media(max-width: 1050px) {
@@ -118,6 +141,30 @@
 		}
 		&__left {
 			padding: 87px 50px 90px;
+		}
+	}
+	.our-network-section {
+		transform: translateY(-130px);
+		&__map {
+			&-info {
+				max-width: none;
+				position: static;
+				display: flex;
+				align-items: center;
+			}
+			&-texts, &-countries {
+				width: 50%;
+			}
+			&-texts {
+				margin-right: 5px;
+				border-radius: 0;
+			}
+			&-countries {
+				margin-left: 5px;
+			}
+			&-country {
+				border-radius: 0;
+			}
 		}
 	}
 }
@@ -231,6 +278,16 @@
 	.support-trade-section {
 		transform: none;
 	}
+	.our-network-section {
+		transform: none;
+		&__network {
+			width: 100%;
+			svg {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
 }
 
 @media(max-width: 700px) {
@@ -317,6 +374,15 @@
 			padding: 40px 32px 50px;
 		}
 	}
+	.our-network-section {
+		&__inner {
+			padding-top: 80px;
+		}
+		&__title {
+			padding-bottom: 0;
+			margin-bottom: 5px;
+		}
+	}
 }
 
 @media(max-width: 650px) {
@@ -355,6 +421,25 @@
 		margin-bottom: -110px;
 		&__left {
 			transform: translateY(-160px);
+		}
+	}
+	.our-network-section {
+		&__map {
+			&-info {
+				display: block;
+			}
+			&-texts, &-countries {
+				width: 100%;
+			}
+			&-texts {
+				margin-right: 0;
+			}
+			&-text {
+				max-width: none;
+			}
+			&-countries {
+				margin-left: 0;
+			}
 		}
 	}
 }
@@ -413,6 +498,13 @@
 		&__right {
 			width: 100%;
 			margin-top: 0;
+		}
+	}
+	.our-network-section {
+		&__map {
+			&-wrapper-link {
+				display: none;
+			}
 		}
 	}
 }
@@ -478,6 +570,21 @@
 		}
 		&__text {
 			font-size: 14px;
+		}
+	}
+	.our-network-section {
+		&__map {
+			&-texts {
+				padding: 24px 36px 40px;
+			}
+			&-text {
+				font-size: 14px;
+			}
+			&-country {
+				font-size: 18px;
+				line-height: 1.388;
+				padding: 6px 32px;
+			}
 		}
 	}
 }
