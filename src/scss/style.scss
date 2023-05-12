@@ -752,6 +752,78 @@ body {
 		justify-content: space-between;
 		align-items: center;
 	}
+	&__logo {
+		margin-bottom: 26px;
+	}
+	&__socials {
+		&-title {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 1.357;
+			color: rgba(255, 255, 255, 0.5);
+			margin-bottom: 12px;
+		}
+		&-items {
+			display: flex;
+		}
+		&-item {
+			width: 30px;
+			height: 30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 100%;
+			background-color: $grey_4;
+			margin-right: 20px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	&__nav {
+		width: 33%;
+		&-list {
+			display: flex;
+			justify-content: space-between;
+		}
+		&-item {
+			margin-bottom: 20px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		&-link {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 1.357;
+			color: $white;
+		}
+	}
+	&__numbers {
+		width: 33.5%;
+	}
+	&__number {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 23px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		span {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 1.357;
+			color: rgba(255, 255, 255, 0.5);
+		}
+		a {
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 1.375;
+			text-align: right;
+			color: $white;
+		}
+	}
 	&__bottom {
 		padding: 10px 40px;
 	}
