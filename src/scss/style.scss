@@ -740,6 +740,33 @@ body {
 }
 /*OUR-NETWORK-SECTION*/
 
+/* CONTACT-SECTION */
+.contact-section {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('@img/contact-section/contact-background.jpg');
+	transform: matrix(-1, 0, 0, 1, 0, 0);
+	padding: 45px 0;
+	&__inner {
+		transform: matrix(-1, 0, 0, 1, 0, 0);
+	}
+	&__content {
+		background: linear-gradient(270deg, rgba(48, 48, 48, 0) 0%, #303030 39.3%);
+	}
+	&__title {
+		font-weight: 800;
+		font-size: 24px;
+		line-height: 140%;
+		color: $white;
+		margin-bottom: 16px;
+	}
+	&__text {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 160%;
+		color: rgba(255, 255, 255, 0.5);
+	}
+}
+/* CONTACT-SECTION */
+
 /*FOOTER*/
 .footer {
 	&__inner {
