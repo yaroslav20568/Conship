@@ -743,13 +743,40 @@ body {
 /* CONTACT-SECTION */
 .contact-section {
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('@img/contact-section/contact-background.jpg');
-	transform: matrix(-1, 0, 0, 1, 0, 0);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 	padding: 45px 0;
-	&__inner {
-		transform: matrix(-1, 0, 0, 1, 0, 0);
+	position: relative;
+	margin: 270px 0 80px;
+	&__wrapper {
+		// padding: 45px 0;
+		// background: linear-gradient(270deg, #303030 15%,rgba(48, 48, 48, 0) 39.3%);
+		background: linear-gradient(270deg, #303030 60%, rgba(48, 48, 48, 0) 80.3%);
+	}
+	&__background {
+		width: 430px;
+		height: 631px;
+		background: url('@img/contact-section/speaker.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		bottom: 0;
 	}
 	&__content {
-		background: linear-gradient(270deg, rgba(48, 48, 48, 0) 0%, #303030 39.3%);
+		padding: 51px 0;
+		// background: linear-gradient(270deg, rgba(48, 48, 48, 0) 0%, #303030 39.3%);
+		display: flex;
+		align-items: center;
+		justify-content: end;
+	}
+	&__left {
+		max-width: 344px;
+		margin-right: 43px;
+	}
+	&__right {
+		// max-width: 271px;
+		width: 23.8%;
 	}
 	&__title {
 		font-weight: 800;
@@ -763,6 +790,34 @@ body {
 		font-size: 16px;
 		line-height: 160%;
 		color: rgba(255, 255, 255, 0.5);
+	}
+	&__input {
+		display: block;
+		width: 100%;
+		background-color: $white;
+		border: 1px solid $grey_1;
+		border-radius: 50px;
+		padding: 15px 32px;
+		margin-bottom: 16px;
+		
+		font-weight: 400;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: $black;
+		&::placeholder {
+			font-weight: 400;
+			font-size: 14px;
+			text-transform: uppercase;
+			color: #AAAAAA;
+		}
+	}
+	&__submit {
+		width: 100%;
+		padding: 16px 97px 16px 40px;
+		text-transform: uppercase;
+		&::after {
+			right: 21%;
+		}
 	}
 }
 /* CONTACT-SECTION */
