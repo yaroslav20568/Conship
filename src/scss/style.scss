@@ -952,6 +952,8 @@ body {
 .page-intro {
 	&__wrapper {
 		position: relative;
+		border-radius: 10px;
+    overflow: hidden;
 	}
 	&__backgrounds {
 	}
@@ -1092,5 +1094,51 @@ body {
 	}
 }
 /* COMPANY-FOUNDED */
+
+/*SISTER-COMPANIES*/
+.sister-companies {
+	padding-bottom: 60px;
+	&__head {
+		margin-bottom: 30px;
+	}
+	&__title {
+		margin-bottom: 38px;
+	}
+	&__text {
+		max-width: 465px;
+		width: auto;
+		color: $black_1;
+	}
+	&__items {
+		display: flex;
+		margin: 0 -10px;
+	}
+	&__item {
+		padding: 0 10px;	
+		&-text {
+			color: $black_1;
+			padding-right: 12px;
+		}
+	}
+	&__wrapper-img {
+		position: relative;
+		margin-bottom: 20px;
+	}
+	&__img {
+		max-width: 100%;
+		border-radius: 10px;
+		&-title {
+			font-weight: 800;
+			font-size: 24px;
+			line-height: 130%;
+			color: $white;
+			position: absolute;
+			left: 40px;
+			bottom: 30px;
+		}
+	}
+}
+/*SISTER-COMPANIES*/
+
 
 @import "media.scss";
