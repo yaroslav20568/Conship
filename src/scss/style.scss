@@ -1108,6 +1108,9 @@ body {
 		max-width: 465px;
 		width: auto;
 		color: $black_1;
+		&:last-child {
+			margin-left: 0;
+		}
 	}
 	&__items {
 		display: flex;
@@ -1140,5 +1143,47 @@ body {
 }
 /*SISTER-COMPANIES*/
 
+/*BACKGROUND-SECTION*/
+.background-section {
+	margin-bottom: 80px;
+	&__inner {
+		max-width: 786px;
+		margin: 0 auto;
+		text-align: center
+	}
+	&__title {
+		font-weight: 800;
+		font-size: 24px;
+		line-height: 130%;
+		color: $white;
+		margin-bottom: 16px;
+	}
+	&__text {
+		font-size: 16px;
+		line-height: 140%;
+		text-align: center;
+		color: $white;
+	}
+}
+/*BACKGROUND-SECTION*/
+
+/*GLOBAL-SERVICE*/
+.global-service {
+	&__wrapper {
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.17%, rgba(0, 0, 0, 0.6) 96.42%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('@img/global-service/global-service-background.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	&__inner {
+		padding: 347px 0 40px;
+	}
+	&__more-text {
+		display: none;
+		font-size: 14px;
+		color: $black_1;
+	}
+}
+/*GLOBAL-SERVICE*/
 
 @import "media.scss";
