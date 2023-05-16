@@ -1012,4 +1012,85 @@ body {
 }
 /* PAGE-INTRO */
 
+/* COMPANY-FOUNDED */
+.company-founded {
+	padding: 90px 0 120px;
+	&__inner {
+		display: flex;
+	}
+	&__left {
+		margin-right: 40px;
+		&-title {
+			padding: 0;
+			line-height: 160%;
+			margin-bottom: 30px;
+			span {
+				font-size: 38px;
+				line-height: 100%;
+				color: $cyan;
+			}
+			&::after {
+				display: none;
+			}
+		}
+	}
+	&__wrapper-img {
+		position: relative;
+	}
+	&__img {
+		border-radius: 10px;
+		&-title {
+			font-weight: 800;
+			font-size: 24px;
+			line-height: 130%;
+			color: $white;
+			position: absolute;
+			left: 27px;
+			bottom: 40px;
+		}
+	}
+	&__right {
+		&-title {
+			text-align: center;
+			margin: 5px 0 60px;
+			&::after {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px -32px;
+	}
+	&__item {
+		width: 50%;
+		padding: 0 15px;
+		margin-bottom: 32px;
+		&-head {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-bottom: 17px;
+			border-bottom: 1px solid $grey_1;
+			margin-bottom: 12px;
+		}
+		&-icon {
+			margin-right: 16px;
+		}
+		&-title {
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 130%;
+			color: $black_1;
+		}
+		&-text {
+			padding-right: 17px;
+			color: $grey_5;
+		}
+	}
+}
+/* COMPANY-FOUNDED */
+
 @import "media.scss";
