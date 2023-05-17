@@ -22,4 +22,31 @@ document.addEventListener('DOMContentLoaded', () => {
 				clickable: true
 		},
 	});
+
+	const characteristicsItems = document.querySelectorAll('.types-containers__item-characteristics');
+	const btnTypesContainers = document.querySelectorAll('.types-containers__item-btn');
+	
+	btnTypesContainers.forEach((btnTypeContainer, i) => {
+		btnTypeContainer.addEventListener('click', () => {
+			if(!btnTypeContainer.classList.contains('active')) {
+				btnTypeContainer.classList.add('active');
+				characteristicsItems[i].style.display = 'block';
+				btnTypeContainer.firstElementChild.textContent = 'Hide details';
+			} else {
+				btnTypeContainer.classList.remove('active');
+				characteristicsItems[i].style.display = 'none';
+				btnTypeContainer.firstElementChild.textContent = 'Show details';
+			}
+		});
+	});
+
+	window.addEventListener('orientationchange', () => {
+		console.log('1');
+		console.log(document.documentElement.clientWidth);
+		if(document.documentElement.clientWidth < 650) {
+			characteristicsItems.forEach((characteristicsItem) => {
+				characteristicsItem.style.display = 'block';
+			});
+		}
+	});
 });
