@@ -1398,4 +1398,23 @@ body {
 	}
 }
 
+/*SOLUTION*/
+.solution {
+	&__wrapper {
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 58.16%, rgba(0, 0, 0, 0.4) 86.42%), url('@img/global-service/global-service-background1.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	&__inner {
+		padding: 218px 0 40px;
+	}
+	&__more-text {
+		display: none;
+		font-size: 14px;
+		color: $black_1;
+	}
+}
+/*SOLUTION*/
+
 @import "media.scss";
