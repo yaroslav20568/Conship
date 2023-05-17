@@ -104,23 +104,36 @@
 			height: 92px;
 		}
 	}
-	.containers-buying {
+	.containers-section {
 		overflow: visible;
 		&__inner {
 			min-height: 405px;
 		}
-		&__left {
-			padding-top: 30px;
-		}
+		// &__left {
+		// 	padding-top: 30px;
+		// }
 		&__img {
 			transform: translateX(0) translateY(-50%);
 			max-width: 100%;
 		}
 	}
+	.containers-buying-blue {
+		&__left {
+			padding-top: 30px;
+		}
+	}
+	.containers-buying-green {
+		&__left {
+			max-width: 400px;
+		}
+		&__texts {
+			margin-bottom: 0;
+		}
+	}
 }
 
 @media(max-width: 1100px) {
-	.containers-buying {
+	.containers-section {
 		&__left {
 			max-width: 315px;
 		}
@@ -329,6 +342,11 @@
 			margin-bottom: 30px;
 		}
 	}
+	.containers-buying-green {
+		&__left {
+			max-width: 260px;
+		}
+	}
 }
 
 @media(max-width: 930px) {
@@ -481,7 +499,7 @@
 			min-height: auto;
 		}
 	}
-	.containers-buying {
+	.containers-section {
 		padding: 80px 0;
 		&__inner {
 			min-height: auto;
@@ -489,11 +507,16 @@
 		}
 		&__left {
 			max-width: none;
-			transform: translatey(-120px);
+			transform: translateY(-120px);
 		}
 		&__img {
 			position: static;
 			transform: none;
+		}
+	}
+	.containers-buying-green {
+		&__left {
+			transform: translateY(-60px);
 		}
 	}
 }
@@ -505,7 +528,7 @@
 			transform: translateY(-190px);
 		}
 	}
-	.containers-buying {
+	.containers-section {
 		&__inner {
 			margin-bottom: -90px;
 		}
@@ -532,6 +555,11 @@
 			}
 		}
 	}
+	// .containers-buying-green {
+	// 	&__left {
+	// 		transform: translateY(-40px) !important;
+	// 	}
+	// }
 }
 
 @media(max-width: 768px) {
@@ -660,12 +688,17 @@
 			margin-bottom: 40px;
 		}
 	}
-	.containers-buying {
+	.containers-section {
 		.container {
 			padding: 0;
 		}
 		&__left {
 			padding: 0 36px;
+		}
+	}
+	.containers-buying-green {
+		&__left {
+			transform: translateY(-60px);
 		}
 	}
 }
@@ -902,7 +935,7 @@
 			}
 		}
 	}
-	.containers-buying {
+	.containers-section {
 		&__inner {
 			margin-bottom: -70px;
 		}
@@ -923,6 +956,11 @@
 			&-value {
 				margin-bottom: 15px;
 			}
+		}
+	}
+	.containers-buying-green {
+		&__left {
+			transform: translateY(-40px);
 		}
 	}
 }
@@ -1116,12 +1154,17 @@
 }
 
 @media(max-width: 420px) {
-	.containers-buying {
+	.containers-section {
 		&__inner {
 			margin-bottom: -60px;
 		}
 		&__left {
 			transform: translateY(-60px);
+		}
+	}
+	.containers-buying-green {
+		&__left {
+			transform: translateY(-30px);
 		}
 	}
 }
@@ -1273,12 +1316,17 @@
 	.global-service {
 		
 	}
-	.containers-buying {
+	.containers-section {
 		&__inner {
 			margin-bottom: 0;
 		}
 		&__left {
 			transform: none;
+		}
+	}
+	.containers-buying-green {
+		&__left {
+			margin-top: 24px;
 		}
 	}
 }

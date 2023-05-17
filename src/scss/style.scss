@@ -1187,17 +1187,17 @@ body {
 /*GLOBAL-SERVICE*/
 
 /*CONTAINERS-BUYING*/
-.containers-buying {
+.containers-section {
 	padding: 120px 0 40px;
 	overflow-x: hidden;
 	&__inner {
 		min-height: 462px;
 		position: relative;
 	}
-	&__left {
-		max-width: 435px;
-		padding-top: 70px;
-	}
+	// &__left {
+	// 	max-width: 435px;
+	// 	padding-top: 70px;
+	// }
 	&__title {
 		margin-bottom: 34px;
 	}
@@ -1213,6 +1213,12 @@ body {
 		right: 0;
 		top: 50%;
 		transform: translateX(68px) translateY(-50%);
+	}
+}
+.containers-buying-blue {
+	&__left {
+		max-width: 435px;
+		padding-top: 70px;
 	}
 }
 /*CONTAINERS-BUYING*/
@@ -1383,5 +1389,13 @@ body {
 	}
 }
 /*TYPES-CONTAINERS*/
+
+.containers-buying-green {
+	padding: 120px 0 0;
+	&__left {
+		max-width: 532px;
+		padding-top: 0;
+	}
+}
 
 @import "media.scss";
