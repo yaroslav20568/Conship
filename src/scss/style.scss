@@ -1186,4 +1186,35 @@ body {
 }
 /*GLOBAL-SERVICE*/
 
+/*CONTAINERS-BUYING*/
+.containers-buying {
+	padding: 120px 0 40px;
+	overflow-x: hidden;
+	&__inner {
+		min-height: 462px;
+		position: relative;
+	}
+	&__left {
+		max-width: 435px;
+		padding-top: 70px;
+	}
+	&__title {
+		margin-bottom: 34px;
+	}
+	&__text {
+		width: auto;
+		&:last-child {
+			margin-left: 0;
+		}
+	}
+	&__img {
+		position: absolute;
+    z-index: -1;
+		right: 0;
+		top: 50%;
+		transform: translateX(68px) translateY(-50%);
+	}
+}
+/*CONTAINERS-BUYING*/
+
 @import "media.scss";
