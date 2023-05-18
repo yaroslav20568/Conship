@@ -150,6 +150,16 @@
 			}
 		}
 	}
+	.support-team {
+		&__texts {
+			margin-bottom: 0;
+		}
+		&__text {
+			&:first-child {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 
 @media(max-width: 1100px) {
@@ -769,6 +779,9 @@
 			}
 		}
 	}
+	.paragraphs {
+		padding: 40px 0 80px;
+	}
 }
 
 @media(max-width: 650px) {
@@ -838,6 +851,15 @@
 				&-blue {
 					margin-top: 25px;
 				}
+			}
+		}
+	}
+	.paragraphs {
+		&__item {
+			width: 100%;
+			margin-bottom: 32px;
+			&-text {
+				max-width: none;
 			}
 		}
 	}
@@ -1449,9 +1471,6 @@
 		&__img {
 			min-height: 380px;
 		}
-		&__link {
-			display: inline-block;
-		}
 	}
 	.page-intro {
 		&__content {
@@ -1483,6 +1502,25 @@
 	.containers-buying-green {
 		&__left {
 			margin-top: 24px;
+		}
+	}
+	.support-team {
+		&__texts {
+			margin-bottom: 40px;
+		}
+		&__link {
+			display: inline-block;
+		}
+	}
+	.paragraphs {
+		&__item {
+			&-title {
+				font-size: 18px;
+				margin-bottom: 12px;
+			}
+			&-text {
+				font-size: 14px;
+			}
 		}
 	}
 }

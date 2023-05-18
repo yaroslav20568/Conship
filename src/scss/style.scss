@@ -1534,10 +1534,13 @@ body {
 	transform: none;
 	&__left {
 		width: 43.2%;
-		padding: 78px 20px 140px 68px;
+		padding: 78px 20px 127px 68px;
 	}
 	&__right {
 		width: 56.8%;
+	}
+	&__texts {
+		margin-bottom: 0;
 	}
 	&__text {
 		&:last-child {
@@ -1558,5 +1561,44 @@ body {
 	}
 }
 /*SUPPORT-TEAM*/
+
+/*PARAGRAPHS*/
+.paragraphs {
+	padding: 60px 0 80px;
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -41px;
+	}
+	&__item {
+		width: 50%;
+		padding: 0 41px;
+		margin-bottom: 48px;
+		&-title {
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 160%;
+			color: $black_1;
+			padding-bottom: 6px;
+			margin-bottom: 16px;
+			position: relative;
+			display: inline-block;
+			&::after {
+				content: "";
+				display: block;
+				width: 100%;
+				height: 2px;
+				background-color: $cyan;
+				position: absolute;
+				bottom: 0;
+			}
+		}
+		&-text {
+			max-width: 500px;
+			color: $black_1;
+		}
+	}
+}
+/*PARAGRAPHS*/
 
 @import "media.scss";
