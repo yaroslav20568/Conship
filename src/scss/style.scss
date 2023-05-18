@@ -603,7 +603,8 @@ body {
 	}
 	&__left {
 		width: 50.8%;
-		padding: 87px 113px 90px 68px
+		padding: 87px 113px 90px 68px;
+		position: relative;
 	}
 	&__right {
 		width: 49.2%;
@@ -633,6 +634,11 @@ body {
 				left: 0;
 			}
 		}
+	}
+	&__wave {
+		position: absolute;
+		bottom: 40px;
+		right: 0;
 	}
 	&__img {
 		width: 100%;
