@@ -389,6 +389,9 @@
 		// 	}
 		// }
 	}
+	.support-team {
+		transform: none;
+	}
 }
 
 @media(max-width: 930px) {
@@ -1285,6 +1288,13 @@
 				margin-bottom: 16px;
 			}
 		}
+		&__row-second {
+			.we-specialize__item {
+				&-blue {
+					margin-bottom: 0;
+				}
+			}
+		}
 	}
 }
 
@@ -1433,6 +1443,14 @@
 			&-col {
 				margin-right: 0;
 			}
+		}
+	}
+	.support-trade-section {
+		&__img {
+			min-height: 380px;
+		}
+		&__link {
+			display: inline-block;
 		}
 	}
 	.page-intro {

@@ -1529,4 +1529,34 @@ body {
 }
 /*WE-SPECIALIZE*/
 
+/*SUPPORT-TEAM*/
+.support-team {
+	transform: none;
+	&__left {
+		width: 43.2%;
+		padding: 78px 20px 140px 68px;
+	}
+	&__right {
+		width: 56.8%;
+	}
+	&__text {
+		&:last-child {
+			font-size: 16px;
+			color: $white;
+			margin-bottom: 0;
+			padding-left: 0;
+			&::before {
+				display: none;
+			}
+		}
+	}
+	&__link {
+		display: none;
+	}
+	&__wave {
+		left: 0;
+	}
+}
+/*SUPPORT-TEAM*/
+
 @import "media.scss";
