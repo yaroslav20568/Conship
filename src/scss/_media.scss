@@ -7,6 +7,15 @@
 			// transform: none;
 		}
 	}
+	.we-specialize {
+		&__item {
+			&-blue {
+				.we-specialize__item-inner {
+					border-radius: 10px 0 0 10px;
+				}
+			}
+		}
+	}
 }
 
 @media(max-width: 1220px) {
@@ -128,6 +137,17 @@
 		}
 		&__texts {
 			margin-bottom: 0;
+		}
+	}
+	.we-specialize {
+		overflow: initial;
+		&__item {
+			&-blue {
+				.we-specialize__item-inner {
+					width: 100%;
+					border-radius: 10px;
+				}
+			}
 		}
 	}
 }
@@ -346,6 +366,25 @@
 		&__left {
 			max-width: 260px;
 		}
+	}
+	.we-specialize {
+		&__row-first {
+			margin-bottom: 0;
+			.we-specialize__item {
+				width: 50%;
+				margin-bottom: 20px;
+			}
+			.we-specialize__item-inner {
+				text-align: center;
+			}
+		}
+		// &__item {
+		// 	&-big {
+		// 		.we-specialize__item-title {
+		// 			position: relative;
+		// 		}
+		// 	}
+		// }
 	}
 }
 
@@ -568,6 +607,13 @@
 			margin-bottom: -60px;
 		}
 	}
+	.we-specialize {
+		&__item {
+			&-img {
+				width: 100%;
+			}
+		}
+	}
 }
 
 @media(max-width: 768px) {
@@ -709,6 +755,14 @@
 			transform: translateY(-60px);
 		}
 	}
+	.we-specialize {
+		padding: 40px 0 80px;
+		&__item-blue {
+			.we-specialize__item-inner {
+				padding: 32px 36px 43px;
+			}
+		}
+	}
 }
 
 @media(max-width: 650px) {
@@ -764,6 +818,20 @@
 			}
 			&-btn {
 				display: block;
+			}
+		}
+	}
+	.we-specialize {
+		&__title {
+			margin-bottom: 55px;
+		}
+		&__row-second {
+			display: block;
+			.we-specialize__item {
+				width: 100%;
+				&-blue {
+					margin-top: 25px;
+				}
 			}
 		}
 	}
@@ -974,6 +1042,24 @@
 			transform: translateY(-40px);
 		}
 	}
+	.we-specialize {
+		&__item {
+			&-title {
+				font-size: 20px;
+				padding: 20px 40px 25px;
+			}
+			&-blue {
+				.we-specialize__item-title {
+					font-size: 20px;
+				}
+				.we-specialize__item-list {
+					li {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media(max-width: 480px) {
@@ -1175,6 +1261,26 @@
 		&__text {
 			font-size: 14px;
 			color: rgba(255, 255, 255, 0.8);
+		}
+	}
+	.we-specialize {
+		overflow: hidden;
+		.container {
+			padding: 0;
+		}
+		&__item {
+			padding: 0 36px;
+			margin-bottom: 16px;
+			&-blue {
+				padding: 0;
+			}
+		}
+		&__row-first {
+			display: block;
+			.we-specialize__item {
+				width: 100%;
+				margin-bottom: 16px;
+			}
 		}
 	}
 }

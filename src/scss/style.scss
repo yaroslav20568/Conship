@@ -1417,4 +1417,110 @@ body {
 }
 /*SOLUTION*/
 
+/*WE-SPECIALIZE*/
+.we-specialize {
+	padding: 80px 0 120px;
+	overflow: hidden;
+	&__title {
+		max-width: 536px;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 80px;
+		&::after {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&__row-first {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px;
+		.we-specialize__item {
+			width: 25%;
+		}
+		margin-bottom: 20px;
+	}
+	&__row-second {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px;
+		.we-specialize__item {
+			width: 50%;
+		}
+	}
+	&__item {
+		padding: 0 10px;
+		&-inner {
+			border: 1px solid rgba(0, 0, 0, 0.1);
+			border-radius: 10px;
+			overflow: hidden;
+		}
+		&-img {
+			max-width: 100%;
+		}
+		&-title {
+			text-align: center;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 130%;
+			color: $black_1;
+			padding: 27px 20px 32px;
+		}
+		// &-big {
+		// 	.we-specialize__item-inner {
+		// 		position: relative;
+		// 	}
+		// 	.we-specialize__item-title {
+		// 		position: absolute;
+		// 		bottom: 0;
+		// 		width: 100%;
+		// 	}
+		// }
+		&-blue {
+			.we-specialize__item-title {
+				font-weight: 800;
+				font-size: 24px;
+				text-align: left;
+				color: $white;
+				margin-bottom: 24px;
+				padding: 0;
+			}
+			.we-specialize__item-inner {
+				background-color: #20B9FE;
+				height: max-content;
+				padding: 50px 60px 73px;
+				width: 112.5%;
+				// border-radius: 10px 0 0 10px;
+			}
+			.we-specialize__item-list {
+				li {
+					font-weight: 700;
+					font-size: 18px;
+					line-height: 140%;
+					color: $white;
+					margin-bottom: 12px;
+					padding-left: 13px;
+					position: relative;
+					&:last-child {
+						margin-bottom: 0;
+					}
+					&::after {
+						content: "";
+						display: block;
+						width: 6px;
+						height: 6px;
+						background-color: $white;
+						border-radius: 100%;
+						position: absolute;
+						left: 0;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+				}
+			}
+		}
+	}
+}
+/*WE-SPECIALIZE*/
+
 @import "media.scss";
