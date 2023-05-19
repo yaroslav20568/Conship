@@ -1757,4 +1757,83 @@ body {
 }
 /*TRADING-PARTNERS*/
 
+/*OUR-NETWORK*/
+.our-network {
+	padding: 90px 0 80px;
+	overflow: hidden;
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 40px;
+		&-left {
+			margin-right: 20px;
+			width: 57.5%;
+		}
+		&-right {
+			width: 42.5%;
+		}
+	}
+	&__map {
+		transform: translateX(-70px);
+	}
+	&__title {
+		margin-bottom: 32px;
+	}
+	&__texts {
+		margin-bottom: 0;
+	}
+	&__text {
+		width: auto;
+		&:last-child {
+			margin-left: 0;
+		}
+	}
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -28px;
+		padding: 0px 16px;
+	}
+	&__item {
+		width: 33.333333%;
+		padding: 0 24px;
+		&-country {
+			border-radius: 5px;
+			padding: 6px 12px 7px;
+			text-align: center;
+			font-weight: 800;
+			font-size: 20px;
+			line-height: 1.35;
+			color: $white;
+			margin-bottom: 24px;
+		}
+		&:first-child {
+			.our-network__item-country {
+				background: linear-gradient(180deg, #24D385 0%, #10BF71 100%);
+			}
+		}
+		&:nth-child(2) {
+			.our-network__item-country {
+				background: linear-gradient(180deg, #82D9ED 0%, #6EC5D9 100%);
+			}
+		}
+		&:last-child {
+			.our-network__item-country {
+				background: linear-gradient(180deg, #FFF115 0%, #EAC900 100%);
+			}
+		}
+		&-title {
+			font-weight: 800;
+			font-size: 18px;
+			color: $black_1;
+			margin-bottom: 8px;
+		}
+		&-text {
+			color: $black_1;
+		}
+	}
+}
+/*OUR-NETWORK*/
+
 @import "media.scss";

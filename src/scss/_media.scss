@@ -200,6 +200,20 @@
 			}
 		}
 	}
+	.our-network {
+		&__map {
+			transform: none;
+			max-width: 100%;
+		}
+		&__texts {
+			margin-bottom: 0;
+		}
+		&__text {
+			&:first-child {
+				margin-bottom: 24px;
+			}
+		}
+	}
 }
 
 @media(max-width: 1100px) {
@@ -911,6 +925,15 @@
 			}
 		}
 	}
+	.our-network {
+		&__items {
+			margin: 0 -28px -32px;
+		}
+		&__item {
+			width: 50%;
+			margin-bottom: 32px;
+		}
+	}
 }
 
 @media(max-width: 680px) {
@@ -1045,6 +1068,14 @@
 			}
 		}
 	}
+	.our-network {
+		&__top {
+			display: block;
+			&-left, &-right {
+				width: 100%;
+			}
+		}
+	}
 }
 
 @media(max-width: 576px) {
@@ -1121,6 +1152,15 @@
 			&-text {
 				padding-right: 0;
 			}
+		}
+	}
+	.our-network {
+		&__items {
+			padding: 0;
+		}
+		&__item {
+			width: 100%;
+			margin-bottom: 32px;
 		}
 	}
 }
@@ -1526,6 +1566,31 @@
 			display: none;
 		}
 	}
+	.our-network {
+		.container {
+			padding: 0;
+		}
+		&__top {
+			&-right {
+				padding: 0 36px;
+			}
+		}
+		&__items {
+			// padding: 0;
+			margin: 0 0 -32px;
+		}
+		&__item {
+			padding: 0;
+			&-country {
+				border-radius: 0;
+				padding: 6px 36px 7px;
+				text-align: left;
+			}
+			&-title, &-text {
+				padding: 0 36px;
+			}
+		}
+	}
 }
 
 @media(max-width: 420px) {
@@ -1583,6 +1648,18 @@
 		&__ship {
 			right: 36px;
 			bottom: -10px;
+		}
+	}
+	.our-network {
+		&__item {
+			&-country {
+				font-size: 18px;
+				line-height: 1.388;
+				margin-bottom: 16px;
+			}
+			&-text {
+				font-size: 14px;
+			}
 		}
 	}
 }
@@ -1768,6 +1845,14 @@
 			}
 			&-text {
 				font-size: 14px;
+			}
+		}
+	}
+	.trading-partners {
+		&__item {
+			&-img {
+				min-height: 300px;
+				object-fit: cover;
 			}
 		}
 	}
