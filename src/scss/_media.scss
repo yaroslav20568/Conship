@@ -168,6 +168,21 @@
 			max-width: 315px;
 		}
 	}
+	.contacts {
+		&__inner {
+			align-items: center;
+		}
+		&__left {
+			width: 60%;
+			padding: 37px 36px 33px;
+		}
+		&__right {
+			width: 40%;
+		}
+		&__imgs {
+			display: none;
+		}
+	}
 }
 
 @media(max-width: 1050px) {
@@ -401,6 +416,21 @@
 	}
 	.support-team {
 		transform: none;
+	}
+	.contacts {
+		&__wave {
+			display: none;
+		}
+		&__item {
+			&-name {
+				margin-bottom: 12px;
+			}
+			&-phone {
+				a {
+					font-size: 32px;
+				}
+			}
+		}
 	}
 }
 
@@ -781,6 +811,39 @@
 	}
 	.paragraphs {
 		padding: 40px 0 80px;
+	}
+	.contacts {
+		&__inner {
+			display: block;
+		}
+		&__left, &__right {
+			width: 100%;
+		}
+		&__right {
+			padding: 43px 36px 0;
+		}
+		&__imgs {
+			display: block;
+		}
+	}
+}
+
+@media(max-width: 680px) {
+	.contacts {
+		&__imgs {
+			position: relative;
+			padding-top: 42px;
+		}
+		&__ship {
+			position: relative;
+			right: 0;
+			max-width: 100%;
+		}
+		&__logo {
+			width: 150px;
+			top: 0;
+			right: 0;
+		}
 	}
 }
 
@@ -1318,6 +1381,22 @@
 			}
 		}
 	}
+	.contacts {
+		.container {
+			padding: 0;
+		}
+		&__title {
+			padding: 0 36px 14px;
+			margin-bottom: 24px;
+		}
+		&__left {
+			border-radius: 0;
+			padding: 37px 36px 0;
+		}
+		&__right {
+			display: none;
+		}
+	}
 }
 
 @media(max-width: 420px) {
@@ -1335,6 +1414,46 @@
 		}
 		&__left {
 			transform: translateY(-30px);
+		}
+	}
+	.contacts {
+		&__item {
+			&-name {
+				font-size: 16px;
+				line-height: 1.375;
+			}
+			&-phone {
+				margin-bottom: 16px;
+				img {
+					width: 30px;
+				}
+				a {
+					font-size: 28px;
+					line-height: 100%;
+					margin-left: 12px;
+				}
+			}
+			&-socials {
+				margin-right: 16px;
+			}
+			&-social {
+				width: 25px;
+				height: 25px;
+				img {
+					width: 52%;
+				}
+			}
+			&-email {
+				font-size: 14px;
+				line-height: 1.357;
+			}
+		}
+		&__logo {
+			right: -16px;
+		}
+		&__ship {
+			right: 36px;
+			bottom: -10px;
 		}
 	}
 }
@@ -1520,6 +1639,24 @@
 			}
 			&-text {
 				font-size: 14px;
+			}
+		}
+	}
+}
+
+@media(max-width: 340px) {
+	.contacts {
+		&__item {
+			&-phone {
+				a {
+					font-size: 24px;
+				}
+			}
+			&-links {
+				display: block;
+			}
+			&-socials {
+				margin: 0 0 10px 0;
 			}
 		}
 	}

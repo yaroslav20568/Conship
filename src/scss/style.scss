@@ -329,6 +329,7 @@ body {
 	border-radius: 30px;
 	background-color: $cyan;
 	color: $white;
+	font-size: 16px;
 	position: relative;
 	&::after {
 		content: "";
@@ -1568,11 +1569,11 @@ body {
 	&__content {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0 -41px;
+		margin: 0 -36px;
 	}
 	&__item {
 		width: 50%;
-		padding: 0 41px;
+		padding: 0 36px;
 		margin-bottom: 48px;
 		&-title {
 			font-weight: 700;
@@ -1600,5 +1601,124 @@ body {
 	}
 }
 /*PARAGRAPHS*/
+
+/*CONTACTS*/
+.contacts {
+	padding: 12px 0 80px;
+	position: relative;
+	&__wave {
+		position: absolute;
+		top: 52px;
+		right: 0;
+	}
+	&__title {
+		margin-bottom: 30px;
+	}
+	&__inner {
+		display: flex;
+	}
+	&__left {
+		width: 64.9%;
+		background-color: #F8F8F8;
+		border-radius: 10px;
+		padding: 37px 0 33px 36px;
+		position: relative;
+	}
+	&__logo {
+		position: absolute;
+		top: 80px;
+		right: 170px;
+	}
+	&__ship {
+		position: absolute;
+		bottom: 0;
+		right: 13px;
+	}
+	&__right {
+		width: 35.1%;
+		padding: 43px 0 50px 36px;
+	}
+	&__items {
+		position: relative;
+    z-index: 1;
+	}
+	&__item {
+		margin-bottom: 35px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&-name {
+			font-weight: 800;
+			font-size: 20px;
+			line-height: 1.35;
+			color: $black_1;
+		}
+		&-phone {
+			display: flex;
+			align-items: center;
+			margin-bottom: 11px;
+			a {
+				font-weight: 400;
+				font-size: 38px;
+				line-height: 1.368;
+				color: $black_1;
+				margin-left: 16px;
+			}
+		}
+		&-links {
+			display: flex;
+			align-items: center;
+		}
+		&-socials {
+			display: flex;
+			margin-right: 24px;
+		}
+		&-social {
+			background-color: #B9B9B9;
+			margin-right: 12px;
+			width: 30px;
+			height: 30px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 100%;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		&-email {
+			line-height: 1.375;
+			color: $black_1;
+		}
+	}
+	&__text {
+		font-size: 20px;
+		line-height: 1.35;
+		text-align: center;
+		color: $black_1;
+		margin-bottom: 30px;
+	}
+	&__input {
+		display: block;
+		width: 100%;
+		border: 1px solid $grey_1;
+		border-radius: 50px;
+		padding: 17px 32px;
+		color: $black;
+		margin-bottom: 16px;
+		&::placeholder {
+			font-weight: 400;
+			text-transform: uppercase;
+			color: #AAAAAA;
+		}
+	}
+	&__submit {
+		width: 100%;
+		margin-top: 24px;
+		text-transform: uppercase;
+		padding: 17px 97px 17px 40px;
+	}
+}
+/*CONTACTS*/
 
 @import "media.scss";
