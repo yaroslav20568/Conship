@@ -16,6 +16,24 @@
 			}
 		}
 	}
+	.trading-partners {
+		&__item {
+			&_left {
+				.trading-partners__item-right {
+					max-width: 650px;
+				}
+			}
+			&_right {
+				.trading-partners__item-left {
+					max-width: 650px;
+				}
+				.trading-partners__item-right {}
+			}
+			&-img {
+				max-width: 100%;
+			}
+		}
+	}
 }
 
 @media(max-width: 1220px) {
@@ -160,6 +178,28 @@
 			}
 		}
 	}
+	.trading-partners {
+		&__item {
+			align-items: center;
+		}
+	}
+	.trading-partners {
+		&__item {
+			&-left, &-right {
+				width: 50%;
+			}
+			&_left {
+				.trading-partners__item-right {
+					padding: 0px 60px;
+				}
+			}
+			&_right {
+				.trading-partners__item-left {
+					padding: 0px 60px;
+				}
+			}
+		}
+	}
 }
 
 @media(max-width: 1100px) {
@@ -181,6 +221,11 @@
 		}
 		&__imgs {
 			display: none;
+		}
+	}
+	.trading-partners {
+		&__item {
+			margin-bottom: 60px;
 		}
 	}
 }
@@ -428,6 +473,29 @@
 			&-phone {
 				a {
 					font-size: 32px;
+				}
+			}
+		}
+	}
+	.trading-partners {
+		&__item {
+			&-left, &-right {
+				width: auto;
+			}
+		}
+	}
+	.trading-partners {
+		&__item {
+			&_left {
+				.trading-partners__item-right {
+					max-width: 450px;
+					padding: 0 40px;
+				}
+			}
+			&_right {
+				.trading-partners__item-left {
+					max-width: 450px;
+					padding: 0 40px;
 				}
 			}
 		}
@@ -826,6 +894,23 @@
 			display: block;
 		}
 	}
+	.trading-partners {
+		&__item {
+			margin-bottom: 40px;
+			&_left {
+				.trading-partners__item-right {
+					max-width: 350px;
+					padding: 0 36px;
+				}
+			}
+			&_right {
+				.trading-partners__item-left {
+					max-width: 350px;
+					padding: 0 36px;
+				}
+			}
+		}
+	}
 }
 
 @media(max-width: 680px) {
@@ -923,6 +1008,40 @@
 			margin-bottom: 32px;
 			&-text {
 				max-width: none;
+			}
+		}
+	}
+	.trading-partners {
+		&__item {
+			flex-direction: column;
+			align-items: start;
+			&_left {
+				.trading-partners__item-left {
+					width: 100%;
+					text-align: center;
+				}
+				.trading-partners__item-right {
+					max-width: none;
+					margin-top: 32px;
+				}
+				.trading-partners__item-img {
+					border-radius: 0;
+				}
+			}
+			&_right {
+				.trading-partners__item-left {
+					max-width: none;
+					margin-top: 32px;
+					order: 1;
+				}
+				.trading-partners__item-right {
+					order: 0;
+					width: 100%;
+					text-align: center;
+				}
+				.trading-partners__item-img {
+					border-radius: 0;
+				}
 			}
 		}
 	}
@@ -1148,6 +1267,16 @@
 						font-size: 16px;
 					}
 				}
+			}
+		}
+	}
+	.trading-partners {
+		&__item {
+			&-title {
+				max-width: 265px;
+			}
+			&-text {
+				font-size: 14px;
 			}
 		}
 	}
