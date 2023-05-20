@@ -1613,11 +1613,15 @@ body {
 /*CONTACTS*/
 .contacts {
 	padding: 12px 0 80px;
-	position: relative;
+	// position: relative;
+	.container {
+		position: relative;
+	}
 	&__wave {
 		position: absolute;
 		top: 52px;
-		right: 0;
+		// right: 0;
+		right: -34px;
 	}
 	&__title {
 		margin-bottom: 30px;
@@ -1711,7 +1715,7 @@ body {
 		width: 100%;
 		border: 1px solid $grey_1;
 		border-radius: 50px;
-		padding: 17px 32px;
+		padding: 20px 32px;
 		color: $black;
 		margin-bottom: 16px;
 		&::placeholder {
@@ -1724,7 +1728,8 @@ body {
 		width: 100%;
 		margin-top: 24px;
 		text-transform: uppercase;
-		padding: 17px 97px 17px 40px;
+		// padding: 17px 97px 17px 40px;
+		padding: 19px 40px;
 	}
 }
 /*CONTACTS*/
