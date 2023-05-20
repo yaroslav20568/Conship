@@ -326,7 +326,6 @@ body {
 /* BTNS */
 .link-green-arrow {
 	display: inline-block;
-	// padding: 9px 97px 9px 40px;
 	padding: 9px 40px;
 	border-radius: 30px;
 	background-color: $cyan;
@@ -344,14 +343,15 @@ body {
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
-			// right: 40px;
 			right: 0;
 			transition: .4s linear right;
 		}
 	}
 	&:hover {
-		&::after {
-			right: 30px;
+		span {
+			&::after {
+				right: -10px;
+			}
 		}
 	}
 }
@@ -465,7 +465,7 @@ body {
 			position: relative;
 			border-radius: 10px;
 			overflow: hidden;
-			cursor: pointer;
+			// cursor: pointer;
 			&:hover {
 				.link-green-stroke {
 					background-color: $cyan;
@@ -738,16 +738,17 @@ body {
 			transform: translateX(-50%);
 		}
 		&-link {
-			padding: 17px 157px 17px 117px;
+			// padding: 17px 157px 17px 117px;
+			padding: 17px 108px;
 			text-transform: uppercase;
-			&::after {
-				right: 90px;
-			}
-			&:hover {
-				&::after {
-					right: 80px;
-				}
-			}
+			// &::after {
+			// 	right: 90px;
+			// }
+			// &:hover {
+			// 	&::after {
+			// 		right: 80px;
+			// 	}
+			// }
 		}
 	}
 }
@@ -826,7 +827,8 @@ body {
 	}
 	&__submit {
 		width: 100%;
-		padding: 16px 97px 16px 40px;
+		// padding: 16px 97px 16px 40px;
+		padding: 14px 40px;
 		text-transform: uppercase;
 		&::after {
 			right: 21%;
