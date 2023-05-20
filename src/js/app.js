@@ -41,8 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 	window.addEventListener('orientationchange', () => {
-		console.log('1');
-		console.log(document.documentElement.clientWidth);
+		burgerBtn.classList.remove('active');
+		headerBottomGroup.classList.remove('active');
 		if(document.documentElement.clientWidth < 650) {
 			characteristicsItems.forEach((characteristicsItem) => {
 				characteristicsItem.style.display = 'block';

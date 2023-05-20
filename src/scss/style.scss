@@ -100,6 +100,7 @@ body {
 			width: 100%;
 			padding: 48px 36px 40px;
 			background-color: $white;
+			border-bottom: 1px solid $grey_2;
 			.header {
 				&__nav {
 					display: block;
@@ -325,23 +326,28 @@ body {
 /* BTNS */
 .link-green-arrow {
 	display: inline-block;
-	padding: 9px 97px 9px 40px;
+	// padding: 9px 97px 9px 40px;
+	padding: 9px 40px;
 	border-radius: 30px;
 	background-color: $cyan;
 	color: $white;
 	font-size: 16px;
-	position: relative;
-	&::after {
-		content: "";
-		display: inline-block;
-		width: 41px;
-    height: 10px;
-		background-image: url('@img/intro/arrow-right.svg');
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		right: 40px;
-		transition: .4s linear right;
+	span {
+		padding-right: 57px;
+		position: relative;
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 41px;
+			height: 10px;
+			background-image: url('@img/intro/arrow-right.svg');
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			// right: 40px;
+			right: 0;
+			transition: .4s linear right;
+		}
 	}
 	&:hover {
 		&::after {
