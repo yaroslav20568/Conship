@@ -664,7 +664,7 @@ body {
 		margin: 0 auto;
 	}
 	&__inner {
-		padding-top: 120px;
+		padding-top: 118px;
 		position: relative;
 	}
 	&__network {
@@ -686,7 +686,8 @@ body {
 	&__map {
 		background-color: $white;
 		position: relative;
-		svg {
+		// svg {
+		img {
 			width: 100%;
 			height: 100%;
 		}
@@ -1614,6 +1615,7 @@ body {
 .contacts {
 	padding: 12px 0 80px;
 	// position: relative;
+	overflow: hidden;
 	.container {
 		position: relative;
 	}
