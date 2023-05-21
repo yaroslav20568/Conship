@@ -132,7 +132,7 @@
 		}
 	}
 	.containers-section {
-		overflow: visible;
+		// overflow: visible;
 		&__inner {
 			min-height: 405px;
 		}
@@ -217,6 +217,9 @@
 }
 
 @media(max-width: 1100px) {
+	.containers-buying-green {
+		padding: 120px 0 80px;
+	}
 	.contact-section {
 		&__wrapper {
 			background: rgba(48, 48, 48, 0.7);
@@ -640,6 +643,11 @@
 			// transform: translateX(36px);
 		}
 	}
+	.page-intro {
+		&__logo {
+			display: none;
+		}
+	}
 	.services-type-section {
 		&__item {
 			&-title {
@@ -656,6 +664,9 @@
 		margin-bottom: -150px;
 		&__left {
 			transform: translateY(-220px);
+		}
+		&__title {
+			padding-bottom: 29px;
 		}
 		&__img {
 			transform: none;
@@ -984,12 +995,21 @@
 				min-height: 600px;
 				object-fit: cover;
 			}
+			&-gradient {
+				background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(180deg, rgba(0, 0, 0, 0) 43.32%, rgba(0, 0, 0, 0.2) 63.63%);
+			}
 		}
 	}
 	.page-intro {
 		&__img {
 			min-height: 500px;
 			object-fit: cover;
+		}
+		&__gradient {
+			display: block;
+		}
+		&__logo {
+			display: block;
 		}
 	}
 	.types-containers {
