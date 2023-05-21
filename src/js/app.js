@@ -50,6 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	});
 
+	$("input[name='phone']").mask("999-99-99");
+
 	/* FORMS */
 	const validateInputs = (inputs) => {
 			let k = 0;
@@ -61,7 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
 							if(input.name === 'name' && /^[a-zA-Zа-яА-ЯёЁ ]+$/.test(input.value)) {
 									k++;
 									input.style.border = '1px solid #000';
-							} else if(input.name === 'phone' && /^[0-9]{9,13}$/.test(input.value)) {
+							// } else if(input.name === 'phone' && /^[0-9]{9,13}$/.test(input.value)) {
+							} else if(input.name === 'phone' && /^[0-9]{3}\-[0-9]{2}\-[0-9]{2}$/.test(input.value)) {
 									k++;
 									input.style.border = '1px solid #000';
 							} else if(input.name === 'email' && /^[a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1}([a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1})*[a-zA-Z0-9]@[a-zA-Z0-9][-\.]{0,1}([a-zA-Z][-\.]{0,1})*[a-zA-Z0-9]\.[a-zA-Z0-9]{1,}([\.\-]{0,1}[a-zA-Z]){0,}[a-zA-Z0-9]{0,}$/i.test(input.value)) {
