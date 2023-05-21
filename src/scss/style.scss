@@ -418,17 +418,27 @@ body {
 	}
 	&__texts {
 		margin-bottom: 48px;
-	}
-	&__text {
-		// max-width: 340px;
-		width: 340px;
-		&:first-child {
-			margin-bottom: 24px;
+		p {
+			// max-width: 340px;
+			width: 340px;
+			&:first-child {
+				margin-bottom: 24px;
+			}
+			&:last-child {
+				margin-left: 97px;
+			}
 		}
-		&:last-child {
-			margin-left: 97px;
-		}
 	}
+	// &__text {
+	// 	// max-width: 340px;
+	// 	width: 340px;
+	// 	&:first-child {
+	// 		margin-bottom: 24px;
+	// 	}
+	// 	&:last-child {
+	// 		margin-left: 97px;
+	// 	}
+	// }
 	&__img {
 		// transform: translateX(68px);
 		border-radius: 10px 0px 0px 10px;
@@ -575,6 +585,7 @@ body {
 
 /*CONTAINERS-BUYING-SECTION*/
 .containers-buying-section {
+	padding-top: 100px;
 	&__left {
 		margin-top: 71px;
 	}
@@ -591,19 +602,28 @@ body {
 			background-image: url('@img/containers-buying/arrow-right-blue.svg');
 		}
 	}
-	&__text {
-		// max-width: 348px;
-		width: 348px;
+	&__texts {
+		p {
+			// max-width: 348px;
+			width: 348px;
+		}
 	}
-}
-/*CONTAINERS-BUYING-SECTION*/
-
-.containers-buying-section {
-	padding-top: 100px;
+	// &__text {
+	// 	// max-width: 348px;
+	// 	width: 348px;
+	// }
 	&__img {
 		transform: translateX(-35px);
 	}
 }
+/*CONTAINERS-BUYING-SECTION*/
+
+// .containers-buying-section {
+// 	padding-top: 100px;
+// 	&__img {
+// 		transform: translateX(-35px);
+// 	}
+// }
 
 /*SUPPORT-TRADE*/
 .support-trade-section {
@@ -630,26 +650,45 @@ body {
 	}
 	&__texts {
 		margin-bottom: 40px;
-	}
-	&__text {
-		width: auto;
-		&:first-child {
-			margin-bottom: 32px;
-			color: $white;
-		}
-		&:last-child {
-			margin-left: 0;
-			font-size: 14px;
-			color: $grey_3;
-			padding-left: 13px;
-			position: relative;
-			&::before {
-				content: "*";
-				position: absolute;
-				left: 0;
+		p {
+			width: auto;
+			&:first-child {
+				margin-bottom: 32px;
+				color: $white;
+			}
+			&:last-child {
+				margin-left: 0;
+				font-size: 14px;
+				color: $grey_3;
+				padding-left: 13px;
+				position: relative;
+				&::before {
+					content: "*";
+					position: absolute;
+					left: 0;
+				}
 			}
 		}
 	}
+	// &__text {
+	// 	width: auto;
+	// 	&:first-child {
+	// 		margin-bottom: 32px;
+	// 		color: $white;
+	// 	}
+	// 	&:last-child {
+	// 		margin-left: 0;
+	// 		font-size: 14px;
+	// 		color: $grey_3;
+	// 		padding-left: 13px;
+	// 		position: relative;
+	// 		&::before {
+	// 			content: "*";
+	// 			position: absolute;
+	// 			left: 0;
+	// 		}
+	// 	}
+	// }
 	&__wave {
 		position: absolute;
 		bottom: 40px;
@@ -710,15 +749,23 @@ body {
 			border-radius: 0px 5px 5px 0px;
 			padding: 16px 47px 17px 69px;
 			margin-bottom: 10px;
-		}
-		&-text {
-			color: $white;
-			margin-bottom: 16px;
-			max-width: 324px;
-			&:last-child {
-				margin-bottom: 0;
+			p {
+				color: $white;
+				margin-bottom: 16px;
+				max-width: 324px;
+				&:last-child {
+					margin-bottom: 0;
+				}
 			}
 		}
+		// &-text {
+		// 	color: $white;
+		// 	margin-bottom: 16px;
+		// 	max-width: 324px;
+		// 	&:last-child {
+		// 		margin-bottom: 0;
+		// 	}
+		// }
 		&-country {
 			border-radius: 0px 5px 5px 0px;
 			padding: 6px 69px;
@@ -1819,13 +1866,19 @@ body {
 	}
 	&__texts {
 		margin-bottom: 0;
-	}
-	&__text {
-		width: auto;
-		&:last-child {
-			margin-left: 0;
+		p {
+			width: auto;
+			&:last-child {
+				margin-left: 0;
+			}
 		}
 	}
+	// &__text {
+	// 	width: auto;
+	// 	&:last-child {
+	// 		margin-left: 0;
+	// 	}
+	// }
 	&__items {
 		display: flex;
 		flex-wrap: wrap;

@@ -65,30 +65,47 @@
 		}
 		&__texts {
 			margin-bottom: 40px;
-		}
-		&__title {
-			margin-bottom: 24px;
-		}
-		&__text {
-			// max-width: none;
-			width: auto;
-			&:first-child {
-				margin-bottom: 16px;
-			}
-			&:last-child {
-				margin-left: 0;
+			p {
+				// max-width: none;
+				width: auto;
+				&:first-child {
+					margin-bottom: 16px;
+				}
+				&:last-child {
+					margin-left: 0;
+				}
 			}
 		}
+		// &__title {
+		// 	margin-bottom: 24px;
+		// }
+		// &__text {
+		// 	// max-width: none;
+		// 	width: auto;
+		// 	&:first-child {
+		// 		margin-bottom: 16px;
+		// 	}
+		// 	&:last-child {
+		// 		margin-left: 0;
+		// 	}
+		// }
 		&__img {
 			width: 100%;
 		}
 	}
 	.support-trade-section {
-		&__text {
-			&:first-child {
-				margin-bottom: 24px;
+		&__texts {
+			p {
+				&:first-child {
+					margin-bottom: 24px;
+				}
 			}
 		}
+		// &__text {
+		// 	&:first-child {
+		// 		margin-bottom: 24px;
+		// 	}
+		// }
 	}
 	.our-network-section {
 		&__map {
@@ -207,12 +224,17 @@
 		}
 		&__texts {
 			margin-bottom: 0;
-		}
-		&__text {
-			&:first-child {
-				margin-bottom: 24px;
+			p {
+				&:first-child {
+					margin-bottom: 24px;
+				}
 			}
 		}
+		// &__text {
+		// 	&:first-child {
+		// 		margin-bottom: 24px;
+		// 	}
+		// }
 	}
 }
 
@@ -1149,10 +1171,13 @@
 			}
 			&-texts {
 				margin-right: 0;
+				p {
+					max-width: none;
+				}
 			}
-			&-text {
-				max-width: none;
-			}
+			// &-text {
+			// 	max-width: none;
+			// }
 			&-countries {
 				margin-left: 0;
 			}
@@ -1208,12 +1233,18 @@
 		&__title {
 			font-size: 20px;
 			line-height: 1.35;
+			margin-bottom: 24px;
 		}
 	}
 	.main-section {
-		&__text {
-			font-size: 14px;
+		&__texts {
+			p {
+				font-size: 14px;
+			}
 		}
+		// &__text {
+		// 	font-size: 14px;
+		// }
 	}
 	.services-type-section {
 		&__item {
@@ -1251,11 +1282,18 @@
 		&__title {
 			margin-bottom: 24px;
 		}
-		&__text {
-			&:first-child {
-				font-size: 14px;
+		&__texts {
+			p {
+				&:first-child {
+					font-size: 14px;
+				}
 			}
 		}
+		// &__text {
+		// 	&:first-child {
+		// 		font-size: 14px;
+		// 	}
+		// }
 		&__left {
 			padding: 32px 36px 41px;
 		}
@@ -1419,9 +1457,14 @@
 				background-image: url('../img/containers-buying/arrow-right-blue-small.svg');
 			}
 		}
-		&__text {
-			font-size: 14px;
+		&__texts {
+			p {
+				font-size: 14px;
+			}
 		}
+		// &__text {
+		// 	font-size: 14px;
+		// }
 	}
 	.our-network-section {
 		&__inner {
@@ -1433,10 +1476,13 @@
 		&__map {
 			&-texts {
 				padding: 24px 36px 40px;
+				p {
+					font-size: 14px;
+				}
 			}
-			&-text {
-				font-size: 14px;
-			}
+			// &-text {
+			// 	font-size: 14px;
+			// }
 			&-country {
 				font-size: 18px;
 				line-height: 1.388;
