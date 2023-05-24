@@ -238,6 +238,16 @@
 	}
 }
 
+@media(max-width: 1150px) {
+	.types-containers {
+		&__item {
+			&-head {
+				display: block;
+			}
+		}
+	}
+}
+
 @media(max-width: 1100px) {
 	.containers-buying-green {
 		padding: 120px 0 80px;
@@ -487,6 +497,9 @@
 		&__item {
 			width: 50%;
 			margin-bottom: 30px;
+			&-head {
+				display: flex;
+			}
 		}
 	}
 	.containers-buying-green {
@@ -742,6 +755,16 @@
 	}
 }
 
+@media(max-width: 800px) {
+	.types-containers {
+		&__item {
+			&-head {
+				display: block;
+			}
+		}
+	}
+}
+
 @media(max-width: 700px) {
 	.containers-buying-section {
 		margin-bottom: -120px;
@@ -784,6 +807,9 @@
 	.containers-buying-green {
 		&__inner {
 			margin-bottom: -60px;
+		}
+		&__left {
+			transform: translateY(-60px);
 		}
 	}
 	.we-specialize {
@@ -911,13 +937,14 @@
 	}
 	.sister-companies {
 		&__items {
-			display: block;
+			// display: block;
 			margin-bottom: -40px;
 		}
 		&__img {
 			width: 100%;
 		}
 		&__item {
+			width: 100%;
 			margin-bottom: 40px;
 		}
 	}
@@ -1060,6 +1087,7 @@
 				padding: 0 36px;
 			}
 			&-head {
+				display: flex;
 				padding-bottom: 0;
 				border: 0;
 			}
@@ -1954,6 +1982,13 @@
 }
 
 @media(max-width: 340px) {
+	.types-containers {
+		&__item {
+			&-head {
+				display: block;
+			}
+		}
+	}
 	.contacts {
 		&__item {
 			&-phone {

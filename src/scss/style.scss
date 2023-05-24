@@ -167,6 +167,7 @@ body {
 							span {
 								line-height: 1.375;
 								color: rgba(50, 50, 50, 0.3);
+								text-transform: uppercase;
 							}
 							a {
 								font-weight: 700;
@@ -186,6 +187,11 @@ body {
 			margin-right: 40px;
 			&:last-child {
 				margin-right: 0;
+			}
+			&.active {
+				.header__nav-link {
+					color: $cyan;
+				}
 			}
 		}
 		&-link {
@@ -1195,10 +1201,12 @@ body {
 	}
 	&__items {
 		display: flex;
+		flex-wrap: wrap;
 		margin: 0 -10px;
 	}
 	&__item {
-		padding: 0 10px;	
+		padding: 0 10px;
+		width: 50%;
 		&-text {
 			color: $black_1;
 			padding-right: 12px;
@@ -1282,10 +1290,12 @@ body {
 	&__title {
 		margin-bottom: 34px;
 	}
-	&__text {
-		width: auto;
-		&:last-child {
-			margin-left: 0;
+	&__texts {
+		p {
+			width: auto;
+			&:last-child {
+				margin-left: 0;
+			}
 		}
 	}
 	&__img {
