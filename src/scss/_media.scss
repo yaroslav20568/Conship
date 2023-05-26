@@ -1856,6 +1856,9 @@
 				right: 21%;
 			}
 		}
+		&__input {
+			padding: 15px 24px;
+		}
 	}
 	.company-founded {
 		&__item {
@@ -1881,6 +1884,14 @@
 		&__item-text {
 			font-size: 14px;
 		}
+	}
+	.iti {
+		&__selected-flag {
+			padding: 0 6px 0 24px !important;
+		}
+	}
+	.iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
+		padding-left: 62px !important;
 	}
 }
 

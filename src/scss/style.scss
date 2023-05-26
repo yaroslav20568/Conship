@@ -2058,6 +2058,12 @@ body {
 	&__country-list {
 		white-space: normal !important;
 	}
+	&__selected-flag {
+		padding: 0 6px 0 32px !important;
+	}
+}
+.iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
+	padding-left: 70px !important;
 }
 #valid-msg, #error-msg {
 	display: block;
