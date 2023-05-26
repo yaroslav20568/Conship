@@ -138,8 +138,14 @@
 		}
 	}
 	.footer {
-		&__numbers {
-			width: 37.5%;
+		// &__numbers {
+		// 	width: 37.5%;
+		// }
+		&__top {
+			justify-content: space-between;
+		}
+		&__widgets, &__nav, &__numbers, &__socials {
+			margin-right: 0;
 		}
 	}
 	.page-intro {
@@ -335,8 +341,11 @@
 		}
 	}
 	.footer {
-		&__numbers {
-			width: 40.5%;
+		// &__numbers {
+		// 	width: 40.5%;
+		// }
+		&__nav {
+			width: 33.1%;
 		}
 	}
 	.page-intro {
@@ -464,13 +473,17 @@
 			width: 25%;
 		}
 		&__number {
-			flex-direction: column;
-			align-items: end;
-			margin-bottom: 15px;
-			span {
-				margin-bottom: 5px;
-				text-align: right;
-			}
+			// flex-direction: column;
+			// align-items: end;
+			// margin-bottom: 15px;
+			// span {
+			// 	margin-bottom: 5px;
+			// 	text-align: right;
+			// }
+			text-align: right;
+		}
+		&__socials {
+			display: none;
 		}
 		// &__numbers {
 		// 	display: none;
@@ -1211,6 +1224,27 @@
 			}
 		}
 	}
+	.footer {
+		&__widgets, &__nav {
+			width: 50%;
+		}
+		&__widgets {
+			margin-right: 50px;
+		}
+		&__nav {
+			&-list {
+				display: block;
+			}
+			&-col {
+				&:first-child {
+					margin-bottom: 24px;
+				}
+			}
+			&-item {
+				margin-bottom: 24px;
+			}
+		}
+	}
 	.contact-section {
 		padding: 40px 0;
 		background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/contact-section/contact-background1.jpg");
@@ -1313,7 +1347,7 @@
 		&__texts {
 			p {
 				&:first-child {
-					font-size: 14px;
+					font-size: 14px !important;
 				}
 			}
 		}
@@ -1355,6 +1389,10 @@
 		}
 		&__bottom {
 			padding: 16px 36px;
+		}
+		&__title {
+			font-size: 18px;
+			line-height: 1.388;
 		}
 	}
 	.company-founded {
@@ -1532,16 +1570,29 @@
 		&__logo {
 			margin-bottom: 32px;
 		}
-		&__socials {
+		&__info {
+			display: none;
+		}
+		// &__socials {
+		// 	display: none;
+		// }
+		&__title {
 			display: none;
 		}
 		&__nav {
 			width: auto;
+			&-list {
+				display: flex;
+			}
 			&-col {
 				margin-right: 50px;
 				&:last-child {
 					margin-right: 0;
 				}
+			}
+			&-link {
+				font-size: 14px;
+				line-height: 1.357;
 			}
 		}
 	}
@@ -1651,16 +1702,21 @@
 			margin-bottom: 16px;
 			&-blue {
 				padding: 0;
+				.we-specialize__item-inner {
+					border-radius: 0;
+				}
 			}
 		}
 		&__row-first {
 			display: block;
+			margin: 0;
 			.we-specialize__item {
 				width: 100%;
 				margin-bottom: 16px;
 			}
 		}
 		&__row-second {
+			margin: 0;
 			.we-specialize__item {
 				&-blue {
 					margin-bottom: 0;

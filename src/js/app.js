@@ -50,29 +50,36 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	});
 
-	$("input[name='phone']").mask("999-99-99");
+	// $("input[name='phone']").mask("999-99-99");
 
 	/* FORMS */
+	let k = 0;
 	const validateInputs = (inputs) => {
-			let k = 0;
-
+			k = 0;
 			inputs.forEach(input => {
 					if(!input.value) {
 							input.style.border = '1px solid red';
 					} else {
 							if(input.name === 'name' && /^[a-zA-Zа-яА-ЯёЁ ]+$/.test(input.value)) {
 									k++;
-									input.style.border = '1px solid #000';
+									input.style.border = '1px solid #D9D9D9';
 							// } else if(input.name === 'phone' && /^[0-9]{9,13}$/.test(input.value)) {
-							} else if(input.name === 'phone' && /^[0-9]{3}\-[0-9]{2}\-[0-9]{2}$/.test(input.value)) {
-									k++;
-									input.style.border = '1px solid #000';
+							// } else if(input.name === 'phone' && /^[0-9]{3}\-[0-9]{2}\-[0-9]{2}$/.test(input.value)) {
+							// 		k++;
+							// 		input.style.border = '1px solid #000';
+							} else if(input.name === 'phone') {
+									// if(input.classList.contains === 'error') {
+									// 	k--;
+									// } else {
+									// 	k++;
+									// }
+									// console.log(input.classList.contains === 'error')
 							} else if(input.name === 'email' && /^[a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1}([a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1})*[a-zA-Z0-9]@[a-zA-Z0-9][-\.]{0,1}([a-zA-Z][-\.]{0,1})*[a-zA-Z0-9]\.[a-zA-Z0-9]{1,}([\.\-]{0,1}[a-zA-Z]){0,}[a-zA-Z0-9]{0,}$/i.test(input.value)) {
 									k++;
-									input.style.border = '1px solid #000';
+									input.style.border = '1px solid #D9D9D9';
 							} else if(input.name === 'message') {
 									k++;
-									input.style.border = '1px solid #000';
+									input.style.border = '1px solid #D9D9D9';
 							} else {
 									k--;
 									input.style.border = '1px solid red';
@@ -90,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	};
 
 	const sendData = (k, inputs, formClass) => {
-			if(inputs.length === k) {
+			if(inputs.length - 1 === k && document.querySelector("input[name='phone']").value != '' && document.querySelector("input[name='phone']").classList[1] != 'error') {
 					const form = document.querySelector(`.${formClass}`);
 					let formData = new FormData(form); 
 					// console.log(form);
@@ -145,4 +152,52 @@ document.addEventListener('DOMContentLoaded', () => {
 	formFunction('contact-section__form', 'contact-section__submit');
 	formFunction('contacts__form', 'contacts__submit');
 	/* FORMS */
+
+	/* FORM-SELECT */
+	const input = document.querySelector("input[name='phone']");
+	// const errorMsg = document.querySelector("#error-msg");
+	// const validMsg = document.querySelector("#valid-msg");
+
+	// here, the index maps to the error code returned from getValidationError - see readme
+	const errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"];
+
+	// initialise plugin
+	const iti = window.intlTelInput(input, {
+		// utilsScript: "/intl-tel-input/js/utils.js?1684676252775"
+		utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+	});
+
+	const reset = () => {
+		input.classList.remove("error");
+		// errorMsg.innerHTML = "";
+		// errorMsg.classList.add("hide");
+		// validMsg.classList.add("hide");
+	};
+
+	const validateSelect = () => {
+		reset();
+		
+		if (input.value.trim()) {
+			if (iti.isValidNumber()) {
+				// validMsg.classList.remove("hide");
+				input.style.border = '1px solid #D9D9D9';
+				k++;
+			} else {
+				input.classList.add("error");
+				input.style.border = '1px solid red';
+				k--;
+				const errorCode = iti.getValidationError();
+				// errorMsg.innerHTML = errorMap[errorCode];
+				// errorMsg.classList.remove("hide");
+			}
+		}
+	};
+
+	// on blur: validate
+	input.addEventListener('blur', validateSelect);
+
+	// on keyup / change flag: reset
+	input.addEventListener('change', validateSelect);
+	input.addEventListener('keyup', validateSelect);
+	/* FORM-SELECT */
 });
